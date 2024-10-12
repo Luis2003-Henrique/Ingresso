@@ -10,7 +10,7 @@ function comprar() {
     let verificar = Math.sign(quantidade);
 
 
-    if (verificar == -1 || verificar == 0) {
+    if (verificar == -1 || verificar == 0 || document.getElementById('qtd').value == '') {
         alert('Informe um número válido');
     } else if (ingressos === 'pista') {
         ingressoPista(quantidade);
